@@ -1,0 +1,13 @@
+C:\Users\tmviz\source\repos\Lab8_Get_To_Know\Lab8_Get_To_Know\bin\Debug\netcoreapp3.1\Lab8_Get_To_Know.exe
+C:\Users\tmviz\source\repos\Lab8_Get_To_Know\Lab8_Get_To_Know\bin\Debug\netcoreapp3.1\Lab8_Get_To_Know.deps.json
+C:\Users\tmviz\source\repos\Lab8_Get_To_Know\Lab8_Get_To_Know\bin\Debug\netcoreapp3.1\Lab8_Get_To_Know.runtimeconfig.json
+C:\Users\tmviz\source\repos\Lab8_Get_To_Know\Lab8_Get_To_Know\bin\Debug\netcoreapp3.1\Lab8_Get_To_Know.runtimeconfig.dev.json
+C:\Users\tmviz\source\repos\Lab8_Get_To_Know\Lab8_Get_To_Know\bin\Debug\netcoreapp3.1\Lab8_Get_To_Know.dll
+C:\Users\tmviz\source\repos\Lab8_Get_To_Know\Lab8_Get_To_Know\bin\Debug\netcoreapp3.1\Lab8_Get_To_Know.pdb
+C:\Users\tmviz\source\repos\Lab8_Get_To_Know\Lab8_Get_To_Know\obj\Debug\netcoreapp3.1\Lab8_Get_To_Know.csprojAssemblyReference.cache
+C:\Users\tmviz\source\repos\Lab8_Get_To_Know\Lab8_Get_To_Know\obj\Debug\netcoreapp3.1\Lab8_Get_To_Know.AssemblyInfoInputs.cache
+C:\Users\tmviz\source\repos\Lab8_Get_To_Know\Lab8_Get_To_Know\obj\Debug\netcoreapp3.1\Lab8_Get_To_Know.AssemblyInfo.cs
+C:\Users\tmviz\source\repos\Lab8_Get_To_Know\Lab8_Get_To_Know\obj\Debug\netcoreapp3.1\Lab8_Get_To_Know.csproj.CoreCompileInputs.cache
+C:\Users\tmviz\source\repos\Lab8_Get_To_Know\Lab8_Get_To_Know\obj\Debug\netcoreapp3.1\Lab8_Get_To_Know.dll
+C:\Users\tmviz\source\repos\Lab8_Get_To_Know\Lab8_Get_To_Know\obj\Debug\netcoreapp3.1\Lab8_Get_To_Know.pdb
+C:\Users\tmviz\source\repos\Lab8_Get_To_Know\Lab8_Get_To_Know\obj\Debug\netcoreapp3.1\Lab8_Get_To_Know.genruntimeconfig.cache
