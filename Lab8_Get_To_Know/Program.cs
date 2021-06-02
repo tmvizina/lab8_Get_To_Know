@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Lab8_Get_To_Know
 {
@@ -7,14 +8,23 @@ namespace Lab8_Get_To_Know
     {
         static void Main(string[] args)
         {
-            bool goOn=true;
+            bool goOn = true;
+            string knowMore = "";
 
+            //initilizes new lists of the stings that will keep the same indexes for all things added at the same time
             List<string> students = new List<string>();
             List<string> hometown = new List<string>();
             List<string> homestate = new List<string>();
             List<string> favoritefood = new List<string>();
             List<string> studentID = new List<string>();
 
+
+            // Student Name
+            // Student Hometown
+            // Student Homestate ( I Split Hometown into to two attributes since a lot of the class didn't give more attritbutes to add and I wanted a value for all students)
+            // Student Favorite Food
+            // Student ID, this is the index Value+1 also referenced in input as student number
+            //
             students.Add("Mark Haines");
             hometown.Add("Grand Rapids");
             homestate.Add("Michigan");
@@ -63,6 +73,7 @@ namespace Lab8_Get_To_Know
             favoritefood.Add("Asian Cuisine");
             studentID.Add("8");
 
+
             students.Add("Joshua Carolin");
             hometown.Add("Northville");
             homestate.Add("Michigan");
@@ -89,39 +100,176 @@ namespace Lab8_Get_To_Know
 
             Console.WriteLine("Welcome to your C# class. Which student would you like to learn more about? ");
 
-            string userRequested = GetUserInput($"\nEnter a number 1-12");
+            Console.WriteLine("Would you like to search by student name or number?");
 
-            int userRequestedIndex = int.Parse(userRequested) - 1;
+            string nameornum = Console.ReadLine().ToLower();
 
-            Console.WriteLine($"Student number {userRequested} is {students[userRequestedIndex]} What would you like to know about them?");
+            if (nameornum == "number")
+            {
 
-            Console.WriteLine("(Hometown/favorite food/homestate) :");
+                string userRequested = GetUserInput($"Enter a number 1-12");
 
-            while (goOn == true)
+                int userRequestedIndex = int.Parse(userRequested) - 1;
+
+                Console.WriteLine($"Student number {userRequested} is {students[userRequestedIndex]} What would you like to know about them?");
+
+
+
+                while (goOn == true)
                 {
+                    Console.WriteLine("(Hometown/favorite food/homestate) :");
                     string usermoreinfo = Console.ReadLine();
 
                     if (usermoreinfo.ToLower() == "hometown")
                     {
-                        Console.WriteLine($"Student's hometown is {hometown[userRequestedIndex]}");
-                        goOn = false;
+                        Console.WriteLine($"Student's hometown is {hometown[userRequestedIndex]}, would you like to know more (y/n)");
+                        knowMore = Console.ReadLine().ToLower();
+
+                        if (knowMore == "y")
+                        {
+
+                        }
+                        else if (knowMore == "n")
+                        {
+                            Console.WriteLine("Thanks!");
+                            goOn = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid");
+                        }
                     }
                     else if (usermoreinfo.ToLower() == "favorite food")
                     {
-                        Console.WriteLine($"Student's favorite food is {favoritefood[userRequestedIndex]}");
-                        goOn = false;
+                        Console.WriteLine($"Student's favorite food is {favoritefood[userRequestedIndex]}, would you like to know more (y/n)");
+                        knowMore = Console.ReadLine().ToLower();
+
+                        if (knowMore == "y")
+                        {
+
+                        }
+                        else if (knowMore == "n")
+                        {
+                            Console.WriteLine("Thanks!");
+                            goOn = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid");
+                        }
+
                     }
                     else if (usermoreinfo.ToLower() == "homestate")
                     {
-                        Console.WriteLine($"Student's Homestate is {homestate[userRequestedIndex]}");
-                        goOn = false;
+                        Console.WriteLine($"Student's Homestate is {homestate[userRequestedIndex]}, would you like to know more (y/n)");
+                        knowMore = Console.ReadLine().ToLower();
+
+                        if (knowMore == "y")
+                        {
+
+                        }
+                        else if (knowMore == "n")
+                        {
+                            Console.WriteLine("Thanks!");
+                            goOn = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid");
+                        }
                     }
                     else
                     {
                         Console.WriteLine("That data does not exist try again");
                     }
                 }
+            }
+            else if (nameornum == "name")
+            {
+                Console.WriteLine("Please Enter a Name: ");
+                string InputName = Console.ReadLine();
 
+                int Index = students.IndexOf(InputName);
+                if (Index != -1)
+                {
+                    Console.WriteLine($"{InputName} is student number {students[Index]}, what would you like to know about them?");
+
+
+
+                    while (goOn == true)
+                    {
+                        Console.WriteLine("(Hometown/favorite food/homestate) :");
+                        string usermoreinfo = Console.ReadLine();
+
+                        if (usermoreinfo.ToLower() == "hometown")
+                        {
+                            Console.WriteLine($"Student's hometown is {hometown[Index]}, would you like to know more (y/n)");
+                            knowMore = Console.ReadLine().ToLower();
+
+                            if (knowMore == "y")
+                            {
+
+                            }
+                            else if (knowMore == "n")
+                            {
+                                Console.WriteLine("Thanks!");
+                                goOn = false;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Invalid");
+                            }
+                        }
+                        else if (usermoreinfo.ToLower() == "favorite food")
+                        {
+                            Console.WriteLine($"Student's favorite food is {favoritefood[Index]}, would you like to know more (y/n)");
+                            knowMore = Console.ReadLine().ToLower();
+
+                            if (knowMore == "y")
+                            {
+
+                            }
+                            else if (knowMore == "n")
+                            {
+                                Console.WriteLine("Thanks!");
+                                goOn = false;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Invalid");
+                            }
+                        }
+                        else if (usermoreinfo.ToLower() == "homestate")
+                        {
+                            Console.WriteLine($"Student's Homestate is {homestate[Index]}, would you like to know more(y / n)");
+                            knowMore = Console.ReadLine().ToLower();
+
+                            if (knowMore == "y")
+                            {
+
+                            }
+                            else if (knowMore == "n")
+                            {
+                                Console.WriteLine("Thanks!");
+                                goOn = false;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Invalid");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("That data does not exist try again");
+                        }
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Name not found in List");
+                }
+            }
 
         }
 
@@ -130,22 +278,25 @@ namespace Lab8_Get_To_Know
         {
             string output = "";
             Console.WriteLine(message);
-            int input = int.Parse(Console.ReadLine());
-            
 
-            if (input>=1&&input<=12)
-            {
-                output = input.ToString();
-                return output;
-            }
-            else
-            {
-                output = "Invalid Student Number Given";
-                Console.WriteLine(output);
-                return output;
-            }
 
-            
+
+                int input = int.Parse(Console.ReadLine());
+
+                if (input >= 1 && input <= 12)
+                {
+                    output = input.ToString();
+                    return output;
+                }
+                else
+                {
+                    output = "Invalid Student Number Given";
+                    Console.WriteLine(output);
+                    return output;
+                }
+ 
+
+        }
         }
     }
-}
+
