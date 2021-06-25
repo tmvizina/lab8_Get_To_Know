@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tmviz\\source\\repos\\Lab8_Get_To_Know\\Lab8_Get_To_Know\\Lab8_Get_To_Know.csproj": {}
+    "C:\\Users\\tmviz\\source\\repos\\dbGettoKnow\\Lab8_Get_To_Know\\Lab8_Get_To_Know.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tmviz\\source\\repos\\Lab8_Get_To_Know\\Lab8_Get_To_Know\\Lab8_Get_To_Know.csproj": {
+    "C:\\Users\\tmviz\\source\\repos\\dbGettoKnow\\Lab8_Get_To_Know\\Lab8_Get_To_Know.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tmviz\\source\\repos\\Lab8_Get_To_Know\\Lab8_Get_To_Know\\Lab8_Get_To_Know.csproj",
+        "projectUniqueName": "C:\\Users\\tmviz\\source\\repos\\dbGettoKnow\\Lab8_Get_To_Know\\Lab8_Get_To_Know.csproj",
         "projectName": "Lab8_Get_To_Know",
-        "projectPath": "C:\\Users\\tmviz\\source\\repos\\Lab8_Get_To_Know\\Lab8_Get_To_Know\\Lab8_Get_To_Know.csproj",
+        "projectPath": "C:\\Users\\tmviz\\source\\repos\\dbGettoKnow\\Lab8_Get_To_Know\\Lab8_Get_To_Know.csproj",
         "packagesPath": "C:\\Users\\tmviz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tmviz\\source\\repos\\Lab8_Get_To_Know\\Lab8_Get_To_Know\\obj\\",
+        "outputPath": "C:\\Users\\tmviz\\source\\repos\\dbGettoKnow\\Lab8_Get_To_Know\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -45,6 +45,22 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -60,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
